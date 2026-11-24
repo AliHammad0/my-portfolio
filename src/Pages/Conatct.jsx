@@ -4,7 +4,6 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
   FaEnvelope,
-  FaMapMarkerAlt,
   FaClock,
   FaCheckCircle,
   FaPaperPlane
@@ -60,22 +59,22 @@ const Contact = () => {
 
   const contactDetails = [
     {
-      title: 'Pakistan',
-      number: '+92 12345',
-      link: 'tel:+12345',
+      title: 'Phone',
+      number: '+92 311 4237376',
+      link: 'tel:+923114237376',
       icon: <FaPhoneAlt />
     },
     {
-      title: 'UK / WhatsApp',
-      number: '+44 123456',
-      link: 'https://wa.me/12345',
+      title: 'WhatsApp',
+      number: '+92 311 4237376',
+      link: 'https://wa.me/923114237376',
       icon: <FaWhatsapp />
     },
     {
-      title: 'USA / WhatsApp',
-      number: '+1 12345',
-      link: 'https://wa.me/12345',
-      icon: <FaWhatsapp />
+      title: 'Email',
+      number: 'alihammadzk@gmail.com',
+      link: 'mailto:alihammadzk@gmail.com',
+      icon: <FaEnvelope />
     }
   ]
 
@@ -107,7 +106,7 @@ const Contact = () => {
       <section className="py-16 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {contactDetails.map((item, index) => (
               <div
@@ -135,22 +134,6 @@ const Contact = () => {
               </div>
             ))}
 
-            <div className="flex items-start gap-5">
-              <div className="w-12 h-12 shrink-0 bg-[#f5f1eb] text-[#b18b5c] flex items-center justify-center text-lg">
-                <FaMapMarkerAlt />
-              </div>
-
-              <div>
-                <h3 className="font-bold text-base mb-2">
-                  Office
-                </h3>
-
-                <p className="text-gray-500 text-sm leading-7">
-                 12345
-                </p>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -169,11 +152,11 @@ const Contact = () => {
               </p>
 
               <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-7">
-                Send Us a Message.
+                Send Me a Message.
               </h2>
 
               <p className="text-gray-500 leading-8 mb-9">
-                Tell us a bit about your project and what
+                Tell me a bit about your project and what
                 you're looking for. I typically reply within
                 a few hours during office hours.
               </p>
@@ -374,7 +357,7 @@ const Contact = () => {
                     {/* How Did You Hear */}
                     <div>
                       <label className="block text-sm font-semibold mb-3">
-                        How Did You Hear About Us?
+                        How Did You Hear About Me?
                       </label>
 
                       <select
@@ -396,7 +379,7 @@ const Contact = () => {
                     {/* Message */}
                     <div>
                       <label className="block text-sm font-semibold mb-3">
-                        How Can We Help You?
+                        How Can I Help You?
                       </label>
 
                       <textarea
@@ -411,6 +394,7 @@ const Contact = () => {
 
                     {/* Privacy */}
                     <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-gray-500">
+
                       <span className="flex items-center gap-2">
                         <FaCheckCircle className="text-[#b18b5c]" />
                         Your details stay private
@@ -425,6 +409,7 @@ const Contact = () => {
                         <FaCheckCircle className="text-[#b18b5c]" />
                         No spam, ever
                       </span>
+
                     </div>
 
                     {/* Submit */}
@@ -454,7 +439,7 @@ const Contact = () => {
 
           <div className="max-w-2xl mb-12">
             <p className="text-[#b18b5c] text-xs font-bold uppercase tracking-[3px] mb-5">
-              Talk to Us About
+              Talk to Me About
             </p>
 
             <h2 className="text-3xl md:text-5xl font-bold mb-5">
@@ -502,7 +487,7 @@ const Contact = () => {
           </div>
 
           <a
-            href="mailto:12345@ali.net"
+            href="mailto:alihammadzk@gmail.com"
             className="inline-flex items-center gap-3 bg-[#c5a477] text-[#171717] px-8 py-4 text-sm font-bold hover:bg-white transition"
           >
             <FaEnvelope />
